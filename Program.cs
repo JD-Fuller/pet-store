@@ -1,12 +1,19 @@
 ﻿using System;
 
-namespace pet_store
+namespace classes
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      Console.WriteLine("It's Dinosaur Time!");
+      Raptor blue = new Raptor("Blue");
+      System.Console.WriteLine(blue.Name);
+
+
+
+
+
     }
+  }
 }
