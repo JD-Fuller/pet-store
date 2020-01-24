@@ -6,11 +6,13 @@ namespace classes.Models
   class JurassicPark
   {
 
+    //INSTANTIATING Lists
+    public List<Raptor> Raptors { get; private set; } = new List<Raptor>();
 
-    public List<Raptor> Raptors { get: private set; } = new List<Raptor>();
+    public List<TRex> TRexs { get; private set; } = new List<TRex>();
 
-    public List<Raptor> TRexs { get: private set; } = new List<Raptor>();
 
+    // METHODS
     public void AddDino(Raptor raptor)
     {
       Raptors.Add(raptor);
@@ -19,10 +21,18 @@ namespace classes.Models
     {
       TRexs.Add(tRex);
     }
-
     public void AddDino(List<Raptor> raptors)
     {
       Raptors.AddRange(raptors);
+    }
+    public void AddDino(Raptor[] raptors)
+    {
+      Raptors.AddRange(raptors);
+
+    }
+    public void AddDino(TRex[] tRexs)
+    {
+      TRexs.AddRange(tRexs);
     }
     public void AddDino(List<TRex> tRexs)
     {
@@ -30,10 +40,11 @@ namespace classes.Models
       TRexs.AddRange(tRexs);
     }
 
-    public DinoStore()
+    public JurassicPark()
     {
-      Raptors;
-      TRexs;
+      // Raptors;
+
+
     }
 
   }
