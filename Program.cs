@@ -7,9 +7,34 @@ namespace classes
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("It's Dinosaur Time!");
       Raptor blue = new Raptor("Blue", "Purplish-blue");
-      System.Console.WriteLine(blue.Name + "&&" + blue.Color);
+
+      Console.WriteLine($@"It's Dinosaur Time!
+      
+Here is your Dinosaur");
+
+      System.Console.WriteLine($@"His name is {blue.Name} and it is {blue.Color}");
+
+      System.Console.WriteLine("Hit A key to add a dinosaur to your list and D to delete a dinosaur from your list");
+
+      String res = Console.ReadLine().ToLower();
+
+      bool validate = true;
+      while (validate)
+      {
+        if (res != "A")
+        {
+
+          Console.WriteLine("Success - a dino has been added");
+          return;
+        }
+        else
+        {
+          Console.WriteLine("Well, that didn't do anything");
+        }
+      }
+
+
 
 
 
